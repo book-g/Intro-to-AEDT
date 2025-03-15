@@ -1,0 +1,7 @@
+$begin 'ValidationCache'
+	$begin 'OneValidationResult'
+		Variation='bent_radius=\'15mm\' height=\'1.8799999999999999mm\' length=\'15mm\' width=\'3.7599999999999998mm\''
+		Status=true
+		FileName='VI4D2717596174207140710.tmp'
+	$end 'OneValidationResult'
+$end 'ValidationCache'

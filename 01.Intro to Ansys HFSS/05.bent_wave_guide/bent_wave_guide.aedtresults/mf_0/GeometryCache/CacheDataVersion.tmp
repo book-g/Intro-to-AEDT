@@ -1,0 +1,9 @@
+$begin 'CacheDataVersion'
+	DataVersion=-1
+$end 'CacheDataVersion'
+$begin 'VariableValues'
+	length='15mm'
+	width='3.76mm'
+	height='1.88mm'
+	bent_radius='15mm'
+$end 'VariableValues'

@@ -1,0 +1,246 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002025, month=000000000003, day=000000000016, hour=000000000002, min=000000000020, sec=000000000002)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000006691, lin=000000000224, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock9'
+	SimSetupID=30
+	SimSetupName='Setup1'
+	VersionID=121
+	$begin 'EmConvergenceData'
+		EmConv(VID=33, Ver=121, EmConv='DV33_S30_V121.EMConvData')
+	$end 'EmConvergenceData'
+	IsImported=false
+	IsTable=false
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		M(VID=33, Ver=121, Dir='DV33_S30_V121.cmesh/')
+	$end 'CurrMeshes'
+	MeshAssemVersionID=2
+	$begin 'NextAssemVersionID'
+		NextUniqueID=3
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'ADP'
+		$begin 'SubData'
+			ID=3
+			ADP(VID=33, Ver=121, Dir='DV33_S30_ADP3_V121.sd/')
+		$end 'SubData'
+	$end 'ADP'
+	$begin 'SU'
+		$begin 'SubData'
+			ID=1
+			SU(VID=33, Ver=121, File='DV33_S30_SD1_V121.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			SU(VID=33, Ver=121, File='DV33_S30_SD2_V121.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			SU(VID=33, Ver=121, File='DV33_S30_SD3_V121.su')
+		$end 'SubData'
+	$end 'SU'
+	$begin 'WaveAdapt'
+		WA(VID=33, Ver=121, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=33, Ver=121, P=3)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=33, Ver=121, File='DV33_S30_V121.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=33, Ver=121, Dir='DV33_S30_MI0_V121.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock9'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=30, Instance=\'SetupDefinition\', Solution=-1, VersionID=121)'='SolutionBlock9'
+	'SolutionKey(SimSetup=30, Instance=\'SolutionDefinition\', Solution=31, VersionID=121)'='SolutionBlock6'
+	'SolutionKey(SimSetup=30, Instance=\'SolutionDefinition\', Solution=32, VersionID=121)'='SolutionBlock7'
+	'SolutionKey(SimSetup=30, Instance=\'SolutionDefinition\', Solution=36, VersionID=121)'='SolutionBlock8'
+$end 'BlockMapName'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='HFSSDesign1'
+	VersionID=121
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=193
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='bent_radius=\'15mm\' height=\'1.8799999999999999mm\' length=\'15mm\' width=\'3.7599999999999998mm\'', ID=33)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=33, Ver=121, Dir='DV33_V121.imesh/')
+	$end 'InitialMeshes'
+	MeshAssemVersionID=14
+	$begin 'NextAssemVersionID'
+		NextUniqueID=15
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'DefinitionMeshes'
+		$begin 'DefMeshes_Comp-1'
+			DefinitionID=-1
+			VersionID=13
+			VIDMap('bent_radius=\'15mm\' height=\'1.8799999999999999mm\' length=\'15mm\' width=\'3.7599999999999998mm\'', 84)
+			DM(VID=84, Ver=13, Dir='NDV84_V13.dmesh/')
+		$end 'DefMeshes_Comp-1'
+	$end 'DefinitionMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=33, Ver=121, Dir='DV33_MI0_V121.sd/')
+		$end 'SubData'
+	$end 'MI'
+	VersionID2=122
+$end 'SolutionBlock1'
+$begin 'SolutionBlock7'
+	SolutionName='LastAdaptive'
+	SolutionID=32
+	V=121
+	$begin 'States'
+		F(VID=33, Ver=121)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(30000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=33, Ver=121, File='DV33_SOL32_M0_V121.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(89, 30000000000)
+		$begin 'DataMap'
+			VID=33
+			Ver=121
+			F(DblID=89, Dir='DV33_S32_V121_F89/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock7'
+$begin 'SolutionBlock6'
+	SolutionName='AdaptivePass'
+	SolutionID=31
+	V=121
+	$begin 'States'
+		F(VID=33, Ver=121)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(30000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=1
+			M(VID=33, Ver=121, File='DV33_SOL31_M1_V121.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			M(VID=33, Ver=121, File='DV33_SOL31_M2_V121.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			M(VID=33, Ver=121, File='DV33_SOL31_M3_V121.sd')
+		$end 'SubData'
+	$end 'M'
+$end 'SolutionBlock6'
+$begin 'SolutionBlock8'
+	SolutionName='Sweep'
+	SolutionID=36
+	V=121
+	$begin 'States'
+		F(VID=33, Ver=121)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(15000000000, 18333333333.33333, 21666666666.66667, 25000000000, 28333333333.33334, 31666666666.66667, 35000000000, 38333333333.33334, 41666666666.66667, 45000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=0
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=33, Ver=121, File='DV33_SOL36_M0_V121.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(100, 45000000000, 101, 41666666666.66667, 102, 38333333333.33334, 103, 35000000000, 104, 31666666666.66667, 105, 28333333333.33334, 106, 25000000000, 107, 21666666666.66667, 108, 18333333333.33333, 109, 15000000000)
+		$begin 'DataMap'
+			VID=33
+			Ver=121
+			F(DblID=109, Dir='DV33_S36_V121_F109/')
+			F(DblID=108, Dir='DV33_S36_V121_F108/')
+			F(DblID=107, Dir='DV33_S36_V121_F107/')
+			F(DblID=106, Dir='DV33_S36_V121_F106/')
+			F(DblID=105, Dir='DV33_S36_V121_F105/')
+			F(DblID=104, Dir='DV33_S36_V121_F104/')
+			F(DblID=103, Dir='DV33_S36_V121_F103/')
+			F(DblID=102, Dir='DV33_S36_V121_F102/')
+			F(DblID=101, Dir='DV33_S36_V121_F101/')
+			F(DblID=100, Dir='DV33_S36_V121_F100/')
+		$end 'DataMap'
+	$end 'Fields'
+	$begin 'SolverUsage'
+		IDDblMap(111, 45000000000, 112, 41666666666.6667, 113, 38333333333.3333, 114, 35000000000, 115, 31666666666.6667, 116, 28333333333.3333, 117, 25000000000, 118, 21666666666.6667, 119, 18333333333.3333, 120, 15000000000)
+		$begin 'DataMap'
+			VID=33
+			Ver=121
+			SU(DblID=120, SU='DV33_S36_V121_F120_SU.txt')
+			SU(DblID=119, SU='DV33_S36_V121_F119_SU.txt')
+			SU(DblID=118, SU='DV33_S36_V121_F118_SU.txt')
+			SU(DblID=117, SU='DV33_S36_V121_F117_SU.txt')
+			SU(DblID=116, SU='DV33_S36_V121_F116_SU.txt')
+			SU(DblID=115, SU='DV33_S36_V121_F115_SU.txt')
+			SU(DblID=114, SU='DV33_S36_V121_F114_SU.txt')
+			SU(DblID=113, SU='DV33_S36_V121_F113_SU.txt')
+			SU(DblID=112, SU='DV33_S36_V121_F112_SU.txt')
+			SU(DblID=111, SU='DV33_S36_V121_F111_SU.txt')
+		$end 'DataMap'
+	$end 'SolverUsage'
+$end 'SolutionBlock8'
+$begin '$index$'
+	$begin '$index$'
+		BlockMapName(pos=1624, lin=55, lvl=0)
+		SolutionBlock6(pos=3804, lin=132, lvl=0)
+		SolutionBlock7(pos=3149, lin=99, lvl=0)
+		SolutionBlock8(pos=4493, lin=165, lvl=0)
+		SolutionBlock9(pos=370, lin=1, lvl=0)
+		SolutionBlock1(pos=2116, lin=62, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=6691, lin=224, lvl=0)
+	$end '$index$'
+$end '$index$'
+                                                                 
