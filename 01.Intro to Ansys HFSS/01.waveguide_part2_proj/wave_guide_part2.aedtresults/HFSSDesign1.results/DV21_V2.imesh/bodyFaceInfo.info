@@ -1,0 +1,96 @@
+$begin 'DesignData'
+	Version=242
+	$begin 'PartsInfo'
+		Part(6, true, 'Box1', true, 'Taconic RF-60 (tm)', 6, 7, 9, 10, 11, 8, 12, true, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, false, false, -1, 143, 175, 143, false)
+	$end 'PartsInfo'
+	$begin 'FacesInfo'
+		Face(7, 6, 9.54837e-05, 2296, true, 500, 74, 74, 0, 0, 1, 4, 0.0254, 0, 0.0018796, 0.0254, 0.0037592, 0.0018796, 0, 0.0037592, 0.0018796, 0, 0, 0.0018796)
+		Face(8, 6, 9.54837e-05, 2296, true, 500, 74, 0, -0, -0, -1, 4, 0.0254, 0, 0, 0, 0, 0, 0, 0.0037592, 0, 0.0254, 0.0037592, 0)
+		Face(9, 6, 4.77418e-05, 2148, true, 500, 0, 37, -0, -1, -0, 4, 0.0254, 0, 0.0018796, 0, 0, 0.0018796, 0, 0, 0, 0.0254, 0, 0)
+		Face(10, 6, 7.06579e-06, 444, true, 0, 74, 37, -1, -0, -0, 4, 0, 0, 0.0018796, 0, 0.0037592, 0.0018796, 0, 0.0037592, 0, 0, 0, 0)
+		Face(11, 6, 4.77418e-05, 2148, true, 500, 148, 37, 0, 1, 0, 4, 0, 0.0037592, 0.0018796, 0.0254, 0.0037592, 0.0018796, 0.0254, 0.0037592, 0, 0, 0.0037592, 0)
+		Face(12, 6, 7.06579e-06, 444, true, 1000, 74, 37, 1, 0, 0, 4, 0.0254, 0.0037592, 0, 0.0254, 0.0037592, 0.0018796, 0.0254, 0, 0.0018796, 0.0254, 0, 0)
+	$end 'FacesInfo'
+	$begin 'PartAddtionalPiecesInfo'
+		$begin 'Bodies'
+		$end 'Bodies'
+		$begin 'Faces'
+		$end 'Faces'
+	$end 'PartAddtionalPiecesInfo'
+	$begin 'DesignGeometryInfo'
+		ModelUnit='mil'
+		ModelerType=2
+		MinDimensionInModelUnits=1e-06
+		MaxDimensionInModelUnits=10000
+		GlobalCSID=1
+		RegionID=-1
+		PreprocessForwardIdStart=33
+		PreprocessForwardIdEnd=33
+		PreprocessBackwardIdStart=2147483647
+		PreprocessBackwardIdEnd=2147483647
+	$end 'DesignGeometryInfo'
+	$begin 'Point3DDefinitionInfo'
+	$end 'Point3DDefinitionInfo'
+	$begin 'Plane3DDefinitionInfo'
+		Plane(-4, 'Global:XY', 1, -1, true, 6619250, 0, 0, 0, 0, 0, 39.3701)
+		Plane(-3, 'Global:YZ', 1, -1, true, 6619250, 0, 0, 0, 39.3701, 0, 0)
+		Plane(-2, 'Global:XZ', 1, -1, true, 7929968, 0, 0, 0, 0, 39.3701, 0)
+	$end 'Plane3DDefinitionInfo'
+	$begin 'CoordinateSystemInfo'
+		CoordinateSystem(1, 'Global', -1, false, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+	$end 'CoordinateSystemInfo'
+	$begin 'ComponentDefinitionInfo'
+	$end 'ComponentDefinitionInfo'
+	$begin 'ComponentInstanceInfo'
+	$end 'ComponentInstanceInfo'
+	$begin 'GeometryEntityListOperationInfo'
+		$begin 'EntityList'
+			ID=2
+			Name='AllObjects'
+			$begin 'GeometryEntityListParameters'
+				EntityType='Object'
+				EntityList(6)
+			$end 'GeometryEntityListParameters'
+		$end 'EntityList'
+	$end 'GeometryEntityListOperationInfo'
+	$begin 'MaterialManager'
+		$begin 'ProjectMaterials'
+			$begin 'Taconic RF-60 (tm)'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic')
+				$end 'PhysicsTypes'
+				$begin 'AttachedData'
+					$begin 'MatAppearanceData'
+						property_data='appearance_data'
+						Red=27
+						Green=110
+						Blue=76
+					$end 'MatAppearanceData'
+				$end 'AttachedData'
+				permittivity='6.15'
+				dielectric_loss_tangent='0.0028'
+			$end 'Taconic RF-60 (tm)'
+			$begin 'vacuum'
+				CoordinateSystemType='Cartesian'
+				BulkOrSurfaceType=1
+				$begin 'PhysicsTypes'
+					set('Electromagnetic')
+				$end 'PhysicsTypes'
+				$begin 'AttachedData'
+					$begin 'MatAppearanceData'
+						property_data='appearance_data'
+						Red=230
+						Green=230
+						Blue=230
+						Transparency=0.95
+					$end 'MatAppearanceData'
+				$end 'AttachedData'
+				permittivity='1'
+			$end 'vacuum'
+		$end 'ProjectMaterials'
+		$begin 'InternalPrivateMaterials'
+		$end 'InternalPrivateMaterials'
+	$end 'MaterialManager'
+$end 'DesignData'
