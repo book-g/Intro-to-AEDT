@@ -1,0 +1,10 @@
+$begin 'CacheDataVersion'
+	DataVersion=-1
+$end 'CacheDataVersion'
+$begin 'VariableValues'
+	length='15mm'
+	width='3.78mm'
+	height='1.88mm'
+	$eps_r1='5'
+	$eps_r2='10'
+$end 'VariableValues'
