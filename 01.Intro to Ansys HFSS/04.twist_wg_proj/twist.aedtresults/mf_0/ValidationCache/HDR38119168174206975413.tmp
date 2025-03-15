@@ -1,0 +1,7 @@
+$begin 'ValidationCache'
+	$begin 'OneValidationResult'
+		Variation='height=\'1.8799999999999999mm\' length=\'15mm\' width=\'3.7799999999999998mm\''
+		Status=true
+		FileName='VI38119168174206975414.tmp'
+	$end 'OneValidationResult'
+$end 'ValidationCache'
